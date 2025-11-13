@@ -118,6 +118,15 @@
   --card-editor-secondary-text: #a0aec0;
 }
 
+html {
+  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape mode on iOS */
+  text-size-adjust: 100%;
+}
+
+html, body, #root {
+    height: 100%;
+    overflow: hidden; /* Prevent body scroll, forces children to manage scrolling */
+}
 
 body {
     background-color: var(--bg);

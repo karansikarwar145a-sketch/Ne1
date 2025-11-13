@@ -70,7 +70,7 @@ const App: React.FC = () => {
   const activeModeDetails = MODES[activeMode];
 
   return (
-    <div className="flex h-screen w-screen bg-[var(--background)] text-[var(--text-primary)] font-sans overflow-hidden">
+    <div className="flex h-full w-full bg-[var(--background)] text-[var(--text-primary)] font-sans">
       <Sidebar 
         activeMode={activeMode} 
         setActiveMode={switchMode}
