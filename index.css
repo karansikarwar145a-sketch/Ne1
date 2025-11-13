@@ -121,6 +121,19 @@
 html {
   -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape mode on iOS */
   text-size-adjust: 100%;
+  font-size: 14px; /* Base for smaller screens */
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 16px; /* Default for desktop */
+  }
 }
 
 html, body, #root {

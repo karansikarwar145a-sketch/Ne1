@@ -253,7 +253,7 @@ export const ChatView: React.FC<ChatViewProps> = ({ mode, onSwitchMode }) => {
                             </div>
                         )}
                         
-                        <div className="chat-input-box rounded-xl shadow-lg text-left border flex flex-col">
+                        <div className="chat-input-box rounded-xl shadow-md text-left border flex flex-col">
                             <div
                                 className="grow-wrap max-h-48 overflow-y-auto"
                                 data-replicated-value={input}
@@ -330,7 +330,7 @@ export const ChatView: React.FC<ChatViewProps> = ({ mode, onSwitchMode }) => {
 
             {/* Tool Sidebar */}
             {isToolSidebarOpen && (
-                <div className="w-[480px] flex-shrink-0 border-l border-[var(--border)] bg-[var(--surface)] flex flex-col animate-slide-in-from-right">
+                <div className="w-[420px] flex-shrink-0 border-l border-[var(--border)] bg-[var(--surface)] flex flex-col animate-slide-in-from-right">
                     <ToolSidebar onClose={() => setIsToolSidebarOpen(false)} onSwitchMode={onSwitchMode} />
                 </div>
             )}
